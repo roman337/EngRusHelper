@@ -1,0 +1,17 @@
+Стартовая страница!!!
+<%@words.each do |word| %>
+  <div class="word">
+    <%= link_to word.from, "/home/add_word/:id#{word.id}" %>
+    <%= word.from %>
+  </div>
+<% end %>
+
+<%= form_with url: '/home/add_word', method: :post do |form| %>
+  <% form.submit 'Редактировать слова' %>
+  <%= link_to 'АУТЕНФИКАЦИЯ ДОЛЖНА БЫЛА БЫТЬ', "/begin_page" %>
+<% end %>>
+
+
+<% begin %>>
+  <%= link_to 'АУТЕНФИКАЦИЯ ДОЛЖНА БЫЛА БЫТЬ', "/begin_page" %>
+<% end %>>

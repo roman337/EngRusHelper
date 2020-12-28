@@ -1,0 +1,7 @@
+<%= form_with url: '/add_word', method: :get do |form| %>
+  <%= form.label 'Введите слово на английском и его перевод'  %>
+  <%= form.text_field :word_from %>
+  <%= form.text_field :word_to %>
+  <%= form.submit 'Добавить слово' %>
+  <%= link_to 'Вернуться на стартовую страницу', "/begin_page" %>
+<% end %>>
