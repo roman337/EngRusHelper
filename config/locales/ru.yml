@@ -30,6 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 ru:
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
   activerecord:
     models:
       comment:
